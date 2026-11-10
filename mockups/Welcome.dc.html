@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Welcome to Vault</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0}
+a{color:#D4B36A}a:hover{color:#E6CB8C}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #0B0B0D; color: #F5F3EE; font-family: Inter, system-ui, sans-serif; padding: 60px 28px 40px; display: flex; flex-direction: column; align-items: center">
+
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px">
+<svg width="168" height="168" viewBox="0 0 168 168" role="img" aria-label="Vault logo: a gold dial ring">
+<circle cx="84" cy="84" r="70" fill="none" stroke="rgba(212,179,106,.18)" stroke-width="1.5"/>
+<circle cx="84" cy="84" r="52" fill="none" stroke="#D4B36A" stroke-width="12" stroke-linecap="round" stroke-dasharray="300 326.7" transform="rotate(-76 84 84)"/>
+<circle cx="84" cy="84" r="5" fill="#D4B36A"/>
+<path d="M84 84V56" stroke="#D4B36A" stroke-width="4" stroke-linecap="round"/>
+</svg>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px">
+<span style="font-size: 34px; font-weight: 600; letter-spacing: 12px; margin-right: -12px">VAULT</span>
+<p style="margin: 0; font-size: 17px; line-height: 1.5; color: #A09E98; text-align: center; max-width: 280px">One place for the two of you to see what you have saved and how close your goals are.</p>
+</div>
+</div>
+
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<div aria-label="Step 1 of 3" role="img" style="display: flex; gap: 6px">
+<span style="width: 22px; height: 6px; border-radius: 3px; background: #D4B36A"></span>
+<span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.2)"></span>
+<span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.2)"></span>
+</div>
+<a href="SetupPeople.dc.html" style="box-sizing: border-box; width: 100%; height: 54px; border-radius: 14px; background: #D4B36A; color: #0B0B0D; font-size: 17px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center">Get started</a>
+<span style="font-size: 13px; color: #A09E98">No sign-up. No passwords. Just the two of you.</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

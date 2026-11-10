@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vault dashboard, light mode</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0}
+a{color:#8A6D25}a:hover{color:#6E561B}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F7F5F0; color: #121214; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+<div style="padding: 60px 20px 0; display: flex; flex-direction: column; gap: 24px; flex: 1">
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #5C5B57">Good morning</span>
+<span style="font-size: 20px; font-weight: 600">Bilal</span>
+</div>
+<div style="display: flex">
+<span style="width: 36px; height: 36px; border-radius: 50%; background: #EFECE4; border: 1px solid #6E9C93; color: #3F6E66; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center">B</span>
+<span style="width: 36px; height: 36px; border-radius: 50%; background: #EFECE4; border: 1px solid #A86F5C; color: #7F4E3E; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; margin-left: -8px">H</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 11px; font-weight: 600; letter-spacing: 1.4px; color: #5C5B57">TOTAL SAVED</span>
+<span style="font-size: 52px; font-weight: 600; letter-spacing: -1.5px; line-height: 1.05; font-variant-numeric: tabular-nums">$35,280<span style="color: #5C5B57; font-size: 30px">.00</span></span>
+<span style="font-size: 14px; color: #121214; font-weight: 500">+$1,450 this month</span>
+</div>
+
+<button style="height: 54px; border: 0; border-radius: 14px; background: #8A6D25; color: #FFFFFF; font-family: inherit; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+Add deposit
+</button>
+
+<div style="background: #FFFFFF; border: 1px solid rgba(0,0,0,.07); border-radius: 20px; box-shadow: 0 6px 16px rgba(0,0,0,.06); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span style="font-size: 15px; font-weight: 600">Savings over time</span>
+<span style="font-size: 13px; color: #5C5B57">Last 6 months</span>
+</div>
+<svg width="326" height="112" viewBox="0 0 326 112" role="img" aria-label="Savings grew from $24,100 in June to $35,280 in November">
+<path d="M0 92 L65 80 L130 70 L196 52 L261 38 L326 14 L326 112 L0 112 Z" fill="#8A6D25" fill-opacity="0.12"/>
+<path d="M0 92 L65 80 L130 70 L196 52 L261 38 L326 14" fill="none" stroke="#8A6D25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="322" cy="15" r="4.5" fill="#8A6D25" stroke="#FFFFFF" stroke-width="2"/>
+</svg>
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #5C5B57">
+<span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid rgba(0,0,0,.07); border-radius: 20px; box-shadow: 0 6px 16px rgba(0,0,0,.06); padding: 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span style="font-size: 15px; font-weight: 600">This month</span>
+<span style="font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums">$1,450</span>
+</div>
+<div role="img" aria-label="Bilal 59 percent, Hiba 41 percent" style="display: flex; gap: 3px; height: 12px">
+<span style="flex: 59; background: #6E9C93; border-radius: 6px"></span>
+<span style="flex: 41; background: #A86F5C; border-radius: 6px"></span>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 13px">
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #6E9C93"></span>Bilal <span style="color: #5C5B57">$850</span></span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #A86F5C"></span>Hiba <span style="color: #5C5B57">$600</span></span>
+</div>
+</div>
+
+</div>
+<nav aria-label="Tabs" style="display: flex; justify-content: space-around; padding: 10px 8px 28px; background: #FFFFFF; border-top: 1px solid rgba(0,0,0,.07)">
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 60px; min-height: 44px; color: #8A6D25; font-size: 11px; font-weight: 600"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>Home</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 60px; min-height: 44px; color: #5C5B57; font-size: 11px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>History</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 60px; min-height: 44px; color: #5C5B57; font-size: 11px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>Goals</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 60px; min-height: 44px; color: #5C5B57; font-size: 11px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>Insights</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 60px; min-height: 44px; color: #5C5B57; font-size: 11px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Settings</span>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
