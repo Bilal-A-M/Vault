@@ -8,62 +8,64 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600&display=swap">
 <style>
 body{margin:0}
-a{color:#D4B36A}a:hover{color:#E6CB8C}
+a{color:#E2C27D}a:hover{color:#EFD7A2}
 </style>
 </helmet>
-<div style="width: 390px; height: 844px; box-sizing: border-box; background: #0B0B0D; color: #F5F3EE; font-family: Inter, system-ui, sans-serif; padding: 72px 20px 40px; display: flex; flex-direction: column; gap: 24px">
+<div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; background: #09090B; color: #F4F2EC; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', Inter, system-ui, sans-serif; padding: 50px 20px 40px; display: flex; flex-direction: column; gap: 22px">
+
+<a href="Welcome.dc.html" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; gap: 2px; font-size: 17px; text-decoration: none; margin-left: -6px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back</a>
 
 <div style="display: flex; flex-direction: column; gap: 8px">
-<h1 style="margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.5px">Who's saving?</h1>
-<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #A09E98">Add both names and pick a colour for each of you.</p>
+<h1 style="margin: 0; font-size: 34px; font-weight: 700; letter-spacing: 0.2px; line-height: 1.15">Who's saving?</h1>
+<p style="margin: 0; font-size: 17px; line-height: 1.4; color: #A8A59C">Add both names and pick a colour for each of you.</p>
 </div>
 
-<div style="background: #16161A; border: 1px solid rgba(255,255,255,.08); border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+<div style="border-radius: 22px; padding: 16px; background: #121215; border: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; align-items: center; gap: 14px">
-<span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #1F1F25; border: 1px solid #9CC2B9; color: #9CC2B9; font-size: 22px; font-weight: 600; display: flex; align-items: center; justify-content: center">B</span>
-<div style="flex: 1; display: flex; flex-direction: column; gap: 8px">
-<label for="p1" style="font-size: 11px; font-weight: 600; letter-spacing: 1.4px; color: #A09E98">FIRST PERSON</label>
-<input id="p1" value="Bilal" style="box-sizing: border-box; width: 100%; height: 48px; padding: 0 14px; border-radius: 14px; border: 1.5px solid #D4B36A; background: #1F1F25; color: #F5F3EE; font-family: inherit; font-size: 17px">
+<span style="flex: none; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #8FD3E0, #5B8FD9); color: #07131C; font-family: Sora, Inter, sans-serif; font-size: 21px; font-weight: 600; display: flex; align-items: center; justify-content: center">B</span>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 6px">
+<label for="p1" style="font-size: 13px; color: #A8A59C">First person</label>
+<input id="p1" value="Bilal" style="box-sizing: border-box; width: 100%; height: 44px; padding: 0 12px; border-radius: 10px; border: 1.5px solid #E2C27D; background: #1C1C21; color: #F4F2EC; font-family: inherit; font-size: 17px; outline: none">
 </div>
 </div>
-<div role="group" aria-label="Colour for first person" style="display: flex; justify-content: space-between">
-<button aria-label="Teal" aria-pressed="true" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #F5F3EE; background: #9CC2B9; box-shadow: inset 0 0 0 3px #16161A"></button>
-<button aria-label="Coral" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #B9806B"></button>
-<button aria-label="Lavender" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #ABA3CF"></button>
-<button aria-label="Sky" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #8FAFC9"></button>
-<button aria-label="Rose" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #C99AAE"></button>
-<button aria-label="Sage" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #A9BF9C"></button>
+<div role="radiogroup" aria-label="Colour for Bilal" style="display: flex; justify-content: space-between">
+<button role="radio" aria-checked="true" aria-label="Sky" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #F4F2EC; background: linear-gradient(135deg, #8FD3E0, #5B8FD9); box-shadow: inset 0 0 0 3px #121215"></button>
+<button role="radio" aria-checked="false" aria-label="Rose" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #E9B3B9, #C9789A)"></button>
+<button role="radio" aria-checked="false" aria-label="Lavender" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #C9C1EC, #8F82CF)"></button>
+<button role="radio" aria-checked="false" aria-label="Sage" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #C3D8B2, #82A96E)"></button>
+<button role="radio" aria-checked="false" aria-label="Coral" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #F2C0A8, #D98767)"></button>
+<button role="radio" aria-checked="false" aria-label="Slate" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #C4C9D2, #7F8796)"></button>
 </div>
 </div>
 
-<div style="background: #16161A; border: 1px solid rgba(255,255,255,.08); border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+<div style="border-radius: 22px; padding: 16px; background: #121215; border: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; align-items: center; gap: 14px">
-<span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #1F1F25; border: 1px solid #B9806B; color: #B9806B; font-size: 22px; font-weight: 600; display: flex; align-items: center; justify-content: center">H</span>
-<div style="flex: 1; display: flex; flex-direction: column; gap: 8px">
-<label for="p2" style="font-size: 11px; font-weight: 600; letter-spacing: 1.4px; color: #A09E98">SECOND PERSON</label>
-<input id="p2" value="Hiba" style="box-sizing: border-box; width: 100%; height: 48px; padding: 0 14px; border-radius: 14px; border: 1px solid rgba(255,255,255,.08); background: #1F1F25; color: #F5F3EE; font-family: inherit; font-size: 17px">
+<span style="flex: none; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #E9B3B9, #C9789A); color: #22090F; font-family: Sora, Inter, sans-serif; font-size: 21px; font-weight: 600; display: flex; align-items: center; justify-content: center">H</span>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 6px">
+<label for="p2" style="font-size: 13px; color: #A8A59C">Second person</label>
+<input id="p2" value="Hiba" style="box-sizing: border-box; width: 100%; height: 44px; padding: 0 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,.08); background: #1C1C21; color: #F4F2EC; font-family: inherit; font-size: 17px; outline: none">
 </div>
 </div>
-<div role="group" aria-label="Colour for second person" style="display: flex; justify-content: space-between">
-<button aria-label="Teal, taken" disabled style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #9CC2B9; opacity: 0.25"></button>
-<button aria-label="Coral" aria-pressed="true" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #F5F3EE; background: #B9806B; box-shadow: inset 0 0 0 3px #16161A"></button>
-<button aria-label="Lavender" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #ABA3CF"></button>
-<button aria-label="Sky" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #8FAFC9"></button>
-<button aria-label="Rose" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #C99AAE"></button>
-<button aria-label="Sage" aria-pressed="false" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #16161A; background: #A9BF9C"></button>
+<div role="radiogroup" aria-label="Colour for Hiba" style="display: flex; justify-content: space-between">
+<button role="radio" aria-checked="false" aria-label="Sky, taken by Bilal" disabled style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #8FD3E0, #5B8FD9); opacity: .22"></button>
+<button role="radio" aria-checked="true" aria-label="Rose" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 2px solid #F4F2EC; background: linear-gradient(135deg, #E9B3B9, #C9789A); box-shadow: inset 0 0 0 3px #121215"></button>
+<button role="radio" aria-checked="false" aria-label="Lavender" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #C9C1EC, #8F82CF)"></button>
+<button role="radio" aria-checked="false" aria-label="Sage" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #C3D8B2, #82A96E)"></button>
+<button role="radio" aria-checked="false" aria-label="Coral" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #F2C0A8, #D98767)"></button>
+<button role="radio" aria-checked="false" aria-label="Slate" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 0; background: linear-gradient(135deg, #C4C9D2, #7F8796)"></button>
 </div>
 </div>
 
-<div style="margin-top: auto; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<div style="margin-top: auto; display: flex; flex-direction: column; align-items: center; gap: 18px">
 <div aria-label="Step 2 of 3" role="img" style="display: flex; gap: 6px">
-<span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.2)"></span>
-<span style="width: 22px; height: 6px; border-radius: 3px; background: #D4B36A"></span>
-<span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.2)"></span>
+<span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.22)"></span>
+<span style="width: 20px; height: 6px; border-radius: 3px; background: #E2C27D"></span>
+<span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.22)"></span>
 </div>
-<a href="SetupWho.dc.html" style="box-sizing: border-box; width: 100%; height: 54px; border-radius: 14px; background: #D4B36A; color: #0B0B0D; font-size: 17px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center">Continue</a>
+<a href="SetupWho.dc.html" style="box-sizing: border-box; width: 100%; height: 54px; border-radius: 15px; background: linear-gradient(180deg, #E8CA8A, #D9B56C); color: #17130A; font-size: 17px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 1px 0 rgba(255,255,255,.35)">Continue</a>
 </div>
 </div>
 </x-dc>

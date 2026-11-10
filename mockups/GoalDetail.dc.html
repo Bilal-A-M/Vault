@@ -8,109 +8,94 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600&display=swap">
 <style>
 body{margin:0}
-a{color:#F3D58C}a:hover{color:#FFE7B0}
+a{color:#E2C27D}a:hover{color:#EFD7A2}
 </style>
 </helmet>
-<div style="position: relative; width: 390px; height: 1240px; box-sizing: border-box; background: #07070A; color: #F7F5F0; font-family: Inter, system-ui, sans-serif; overflow: hidden">
+<div style="position: relative; width: 390px; height: 1240px; box-sizing: border-box; background: #09090B; color: #F4F2EC; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', Inter, system-ui, sans-serif; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 560px; height: 460px; left: -85px; top: -180px; border-radius: 50%; background: radial-gradient(closest-side, rgba(226,194,125,.15), rgba(226,194,125,0))"></div>
 
-<div aria-hidden="true" style="position: absolute; width: 560px; height: 560px; left: -85px; top: -140px; border-radius: 50%; background: radial-gradient(circle, rgba(232,184,96,.34) 0%, rgba(232,184,96,0) 60%)"></div>
-<div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; right: -230px; top: 640px; border-radius: 50%; background: radial-gradient(circle, rgba(236,72,153,.18) 0%, rgba(236,72,153,0) 62%)"></div>
+<div style="position: relative; padding: 50px 20px 40px; display: flex; flex-direction: column; gap: 22px">
 
-<div style="position: relative; padding: 52px 18px 32px; display: flex; flex-direction: column; gap: 20px">
-
-<div style="display: flex; justify-content: space-between; align-items: center">
-<a href="Goals.dc.html" aria-label="Back to goals" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.05); color: #F7F5F0; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
-<span style="font-size: 15px; font-weight: 600">Goal</span>
-<button aria-label="Edit goal" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.05); color: #F7F5F0; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM14 6l4 4"/></svg></button>
+<div style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center">
+<a href="Goals.dc.html" style="justify-self: start; min-height: 44px; display: flex; align-items: center; gap: 2px; font-size: 17px; text-decoration: none; margin-left: -6px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Goals</a>
+<span style="font-size: 17px; font-weight: 600">Vacation</span>
+<button style="justify-self: end; min-height: 44px; padding: 0; border: 0; background: none; color: #E2C27D; font-family: inherit; font-size: 17px">Edit</button>
 </div>
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 4px">
-<svg width="232" height="232" viewBox="0 0 232 232" role="img" aria-label="Vacation is 78 percent funded">
-<defs>
-<linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1C9"/><stop offset="0.5" stop-color="#F3D58C"/><stop offset="1" stop-color="#B98A3E"/></linearGradient>
-</defs>
-<circle cx="116" cy="116" r="110" fill="none" stroke="rgba(243,213,140,.12)" stroke-width="1" stroke-dasharray="2 5"/>
-<circle cx="116" cy="116" r="92" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="16"/>
-<circle cx="116" cy="116" r="92" fill="none" stroke="url(#ringG)" stroke-width="16" stroke-linecap="round" stroke-dasharray="450.9 578" transform="rotate(-90 116 116)" style="filter: drop-shadow(0 0 12px rgba(243,213,140,.55))"/>
-<circle cx="116" cy="116" r="70" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-<text x="116" y="122" text-anchor="middle" font-size="46" font-weight="600" fill="#F7F5F0" font-family="Sora, Inter, sans-serif" letter-spacing="-2">78%</text>
-<text x="116" y="146" text-anchor="middle" font-size="12" fill="#9A978F" font-family="Inter, sans-serif" letter-spacing="1.4">FUNDED</text>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 14px">
+<svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Vacation is 78 percent funded">
+<circle cx="110" cy="110" r="104" fill="none" stroke="rgba(226,194,125,.22)" stroke-width="5" stroke-dasharray="1 7.17" transform="rotate(-90 110 110)"/>
+<circle cx="110" cy="110" r="86" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="12"/>
+<circle cx="110" cy="110" r="86" fill="none" stroke="#E2C27D" stroke-width="12" stroke-linecap="round" stroke-dasharray="421.5 540.4" transform="rotate(-90 110 110)"/>
+<text x="110" y="118" text-anchor="middle" font-size="44" font-weight="500" fill="#F4F2EC" font-family="Sora, Inter, sans-serif" letter-spacing="-1.5">78%</text>
+<text x="110" y="142" text-anchor="middle" font-size="13" fill="#A8A59C" font-family="-apple-system, Inter, sans-serif">funded</text>
 </svg>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
-<h1 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.6px">Vacation</h1>
-<span style="font-size: 14px; color: #9A978F">Target Mar 28, 2027 · 138 days left</span>
-</div>
-<div style="display: flex; gap: 6px">
-<span style="padding: 5px 10px; border-radius: 999px; background: linear-gradient(135deg, rgba(255,231,176,.22), rgba(201,150,63,.22)); border: 1px solid rgba(243,213,140,.35); color: #F3D58C; font-size: 12px; font-weight: 700">25%</span>
-<span style="padding: 5px 10px; border-radius: 999px; background: linear-gradient(135deg, rgba(255,231,176,.22), rgba(201,150,63,.22)); border: 1px solid rgba(243,213,140,.35); color: #F3D58C; font-size: 12px; font-weight: 700">50%</span>
-<span style="padding: 5px 10px; border-radius: 999px; background: linear-gradient(135deg, rgba(255,231,176,.22), rgba(201,150,63,.22)); border: 1px solid rgba(243,213,140,.35); color: #F3D58C; font-size: 12px; font-weight: 700">75%</span>
-<span style="padding: 5px 10px; border-radius: 999px; border: 1px dashed rgba(255,255,255,.18); color: #6F6C66; font-size: 12px; font-weight: 700">100%</span>
+<span style="font-size: 15px; color: #A8A59C">Target Mar 28, 2027 · 138 days left</span>
+<div style="display: flex; gap: 6px" aria-label="Milestones: 25, 50 and 75 percent reached; 100 percent to go" role="img">
+<span style="padding: 4px 10px; border-radius: 12px; background: rgba(226,194,125,.14); color: #E2C27D; font-size: 13px; font-weight: 600">25%</span>
+<span style="padding: 4px 10px; border-radius: 12px; background: rgba(226,194,125,.14); color: #E2C27D; font-size: 13px; font-weight: 600">50%</span>
+<span style="padding: 4px 10px; border-radius: 12px; background: rgba(226,194,125,.14); color: #E2C27D; font-size: 13px; font-weight: 600">75%</span>
+<span style="padding: 3px 9px; border-radius: 12px; border: 1px solid rgba(255,255,255,.14); color: #8E8B84; font-size: 13px; font-weight: 600">100%</span>
 </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-radius: 24px; background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025)); border: 1px solid rgba(255,255,255,.09); box-shadow: inset 0 1px 0 rgba(255,255,255,.07)">
-<div style="padding: 16px 14px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 11px; color: #9A978F">Saved</span><span style="font-family: Sora, Inter, sans-serif; font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums">$4,680</span></div>
-<div style="padding: 16px 14px; border-left: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 11px; color: #9A978F">Target</span><span style="font-family: Sora, Inter, sans-serif; font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums">$6,000</span></div>
-<div style="padding: 16px 14px; border-left: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 11px; color: #9A978F">To go</span><span style="font-family: Sora, Inter, sans-serif; font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums; color: #F3D58C">$1,320</span></div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-radius: 22px; background: #121215; border: 1px solid rgba(255,255,255,.07)">
+<div style="padding: 16px 14px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #A8A59C">Saved</span><span style="font-family: Sora, Inter, sans-serif; font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums">$4,680</span></div>
+<div style="padding: 16px 14px; border-left: 0.5px solid rgba(255,255,255,.10); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #A8A59C">Target</span><span style="font-family: Sora, Inter, sans-serif; font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums">$6,000</span></div>
+<div style="padding: 16px 14px; border-left: 0.5px solid rgba(255,255,255,.10); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #A8A59C">To go</span><span style="font-family: Sora, Inter, sans-serif; font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums">$1,320</span></div>
 </div>
 
-<div style="border-radius: 24px; padding: 18px; background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025)); border: 1px solid rgba(255,255,255,.09); display: flex; flex-direction: column; gap: 12px">
+<div style="border-radius: 22px; padding: 18px; background: #121215; border: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column; gap: 12px">
 <div style="display: flex; justify-content: space-between; align-items: baseline">
-<span style="font-family: Sora, Inter, sans-serif; font-size: 16px; font-weight: 600">Balance</span>
-<span style="font-size: 12px; color: #9A978F">≈ $290 / month to finish on time</span>
+<h2 style="margin: 0; font-size: 17px; font-weight: 600">Balance</h2>
+<span style="font-size: 13px; color: #A8A59C">About $290 a month to finish on time</span>
 </div>
 <svg width="318" height="140" viewBox="0 0 318 140" role="img" aria-label="Balance rose from $700 in May to $4,680 in November, against a $6,000 target">
-<defs>
-<linearGradient id="balFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3D58C" stop-opacity="0.42"/><stop offset="1" stop-color="#F3D58C" stop-opacity="0"/></linearGradient>
-<linearGradient id="balLine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B98A3E"/><stop offset="1" stop-color="#FFF1C9"/></linearGradient>
-</defs>
-<path d="M0 22H318" stroke="rgba(255,255,255,.35)" stroke-width="1" stroke-dasharray="3 5"/>
-<rect x="232" y="6" width="86" height="20" rx="10" fill="rgba(255,255,255,.08)"/>
-<text x="275" y="20" text-anchor="middle" font-size="10" font-weight="600" fill="#F7F5F0" font-family="Inter, sans-serif">Target $6,000</text>
+<defs><linearGradient id="balFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E2C27D" stop-opacity="0.16"/><stop offset="1" stop-color="#E2C27D" stop-opacity="0"/></linearGradient></defs>
+<path d="M0 22H318" stroke="rgba(244,242,236,.35)" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="0" y="14" font-size="12" fill="#A8A59C" font-family="-apple-system, Inter, sans-serif">Target $6,000</text>
 <path d="M0 122 C30 118 40 112 53 110 C75 106 90 98 106 94 C128 89 145 84 159 80 C180 74 196 68 212 64 C234 58 250 54 265 50 C285 46 300 44 314 40 L314 140 L0 140 Z" fill="url(#balFill)"/>
-<path d="M0 122 C30 118 40 112 53 110 C75 106 90 98 106 94 C128 89 145 84 159 80 C180 74 196 68 212 64 C234 58 250 54 265 50 C285 46 300 44 314 40" fill="none" stroke="url(#balLine)" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 6px rgba(243,213,140,.7))"/>
-<path d="M314 40 L318 22" stroke="rgba(243,213,140,.5)" stroke-width="1.5" stroke-dasharray="2 3"/>
-<circle cx="314" cy="40" r="4.5" fill="#FFF1C9" style="filter: drop-shadow(0 0 6px #F3D58C)"/>
+<path d="M0 122 C30 118 40 112 53 110 C75 106 90 98 106 94 C128 89 145 84 159 80 C180 74 196 68 212 64 C234 58 250 54 265 50 C285 46 300 44 314 40" fill="none" stroke="#E2C27D" stroke-width="2" stroke-linecap="round"/>
+<circle cx="314" cy="40" r="4" fill="#E2C27D"/>
 </svg>
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6F6C66"><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #8E8B84"><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span></div>
 </div>
 
-<div style="border-radius: 24px; padding: 18px; background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025)); border: 1px solid rgba(255,255,255,.09); display: flex; align-items: center; gap: 18px">
-<svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="Bilal gave 56 percent, Hiba 44 percent">
-<defs>
-<linearGradient id="dB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#67E8F9"/><stop offset="1" stop-color="#3B82F6"/></linearGradient>
-<linearGradient id="dS" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDA4AF"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
-</defs>
-<circle cx="46" cy="46" r="36" fill="none" stroke="url(#dB)" stroke-width="12" stroke-dasharray="122.6 226.2" transform="rotate(-90 46 46)"/>
-<circle cx="46" cy="46" r="36" fill="none" stroke="url(#dS)" stroke-width="12" stroke-dasharray="95.6 226.2" stroke-dashoffset="-128.6" transform="rotate(-90 46 46)"/>
-</svg>
-<div style="flex: 1; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: Sora, Inter, sans-serif; font-size: 16px; font-weight: 600">Who's chipped in</span>
-<div style="display: flex; justify-content: space-between; align-items: center"><span style="display: flex; align-items: center; gap: 8px; font-size: 14px"><span style="width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, #67E8F9, #3B82F6)"></span>Bilal</span><span style="font-family: Sora, Inter, sans-serif; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums">$2,600</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center"><span style="display: flex; align-items: center; gap: 8px; font-size: 14px"><span style="width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, #FDA4AF, #EC4899)"></span>Hiba</span><span style="font-family: Sora, Inter, sans-serif; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums">$2,080</span></div>
+<div style="border-radius: 22px; padding: 18px; background: #121215; border: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 17px; font-weight: 600">Who's chipped in</h2>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 15px; color: #A8A59C; font-variant-numeric: tabular-nums">$4,680</span>
+</div>
+<div role="img" aria-label="Bilal 56 percent, Hiba 44 percent" style="display: flex; gap: 3px; height: 8px">
+<span style="flex: 56; border-radius: 4px; background: linear-gradient(90deg, #5B8FD9, #8FD3E0)"></span>
+<span style="flex: 44; border-radius: 4px; background: linear-gradient(90deg, #E9B3B9, #C9789A)"></span>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 15px">
+<span style="display: flex; align-items: center; gap: 7px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #8FD3E0"></span>Bilal <span style="font-family: Sora, Inter, sans-serif; color: #A8A59C; font-variant-numeric: tabular-nums">$2,600</span></span>
+<span style="display: flex; align-items: center; gap: 7px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #E9B3B9"></span>Hiba <span style="font-family: Sora, Inter, sans-serif; color: #A8A59C; font-variant-numeric: tabular-nums">$2,080</span></span>
 </div>
 </div>
 
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: Sora, Inter, sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.3px">Deposits</span>
-<div style="border-radius: 24px; padding: 6px 16px; background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025)); border: 1px solid rgba(255,255,255,.09); display: flex; flex-direction: column">
-<div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.06)">
-<span style="flex: none; width: 42px; height: 42px; box-sizing: border-box; border-radius: 14px; padding: 1.5px; background: linear-gradient(135deg, #FDA4AF, #EC4899); display: flex"><span style="flex: 1; border-radius: 12.5px; background: #15131A; color: #FBCFE8; font-family: Sora, Inter, sans-serif; font-weight: 600; display: flex; align-items: center; justify-content: center">H</span></span>
-<div style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 500">Payday top-up</span><span style="font-size: 12px; color: #9A978F">Hiba · Today</span></div>
-<span style="font-family: Sora, Inter, sans-serif; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums">+$200</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700">Deposits</h2>
+<div style="border-radius: 22px; padding: 0 16px; background: #121215; border: 1px solid rgba(255,255,255,.07); display: flex; flex-direction: column">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid rgba(255,255,255,.10)">
+<span style="flex: none; width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; padding: 1.5px; background: linear-gradient(135deg, #E9B3B9, #C9789A); display: flex"><span style="flex: 1; border-radius: 50%; background: #121215; color: #F3D6DD; font-family: Sora, Inter, sans-serif; font-weight: 600; display: flex; align-items: center; justify-content: center">H</span></span>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px">Payday top-up</span><span style="font-size: 13px; color: #A8A59C">Hiba · Today</span></div>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 17px; font-weight: 500; font-variant-numeric: tabular-nums">+$200</span>
 </div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.06)">
-<span style="flex: none; width: 42px; height: 42px; box-sizing: border-box; border-radius: 14px; padding: 1.5px; background: linear-gradient(135deg, #67E8F9, #3B82F6); display: flex"><span style="flex: 1; border-radius: 12.5px; background: #15131A; color: #A5F3FC; font-family: Sora, Inter, sans-serif; font-weight: 600; display: flex; align-items: center; justify-content: center">B</span></span>
-<div style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 500">Flights fund</span><span style="font-size: 12px; color: #9A978F">Bilal · Oct 28</span></div>
-<span style="font-family: Sora, Inter, sans-serif; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums">+$350</span>
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid rgba(255,255,255,.10)">
+<span style="flex: none; width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; padding: 1.5px; background: linear-gradient(135deg, #8FD3E0, #5B8FD9); display: flex"><span style="flex: 1; border-radius: 50%; background: #121215; color: #CDEBF1; font-family: Sora, Inter, sans-serif; font-weight: 600; display: flex; align-items: center; justify-content: center">B</span></span>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px">Flights fund</span><span style="font-size: 13px; color: #A8A59C">Bilal · Oct 28</span></div>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 17px; font-weight: 500; font-variant-numeric: tabular-nums">+$350</span>
 </div>
 <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0">
-<span style="flex: none; width: 42px; height: 42px; box-sizing: border-box; border-radius: 14px; padding: 1.5px; background: linear-gradient(135deg, #FDA4AF, #EC4899); display: flex"><span style="flex: 1; border-radius: 12.5px; background: #15131A; color: #FBCFE8; font-family: Sora, Inter, sans-serif; font-weight: 600; display: flex; align-items: center; justify-content: center">H</span></span>
-<div style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 500">Sold old bike</span><span style="font-size: 12px; color: #9A978F">Hiba · Oct 15</span></div>
-<span style="font-family: Sora, Inter, sans-serif; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums">+$180</span>
+<span style="flex: none; width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; padding: 1.5px; background: linear-gradient(135deg, #E9B3B9, #C9789A); display: flex"><span style="flex: 1; border-radius: 50%; background: #121215; color: #F3D6DD; font-family: Sora, Inter, sans-serif; font-weight: 600; display: flex; align-items: center; justify-content: center">H</span></span>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px">Sold old bike</span><span style="font-size: 13px; color: #A8A59C">Hiba · Oct 15</span></div>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 17px; font-weight: 500; font-variant-numeric: tabular-nums">+$180</span>
 </div>
 </div>
 </div>
