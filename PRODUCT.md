@@ -8,7 +8,7 @@ ios
 
 ## Users
 
-Two people only: a married couple, Bilal and his wife, who share a joint bank
+Two people only: a married couple, Bilal and his wife Hiba, who share a joint bank
 account. Each uses Vault on their own iPhone. They open it to log money they
 have just moved into savings, to see how much each of them has put in, and to
 check how close they are to their goals.
@@ -39,10 +39,13 @@ intent between partners, not a banking app or a budgeting tool.
 - The two phones share one vault through **iCloud (CloudKit sharing)**
   between their two Apple IDs. This is the only sync mechanism and requires
   no Vault account.
-- Each partner should be told when the other adds money ("Sara added $200 to
-  Vacation") and when a goal reaches 25, 50, 75 or 100%.
+- Each partner should be told when the other adds money and when a goal
+  reaches 25, 50, 75 or 100%.
 - Home Screen widgets show the total saved, a goal's progress, and the
   latest deposit.
+
+Notifications are worded around the other person, for example "Hiba added
+$200 to Vacation".
 
 ## Capabilities and Constraints
 
@@ -56,8 +59,6 @@ intent between partners, not a banking app or a budgeting tool.
 - Current phase is design only: screens run on mock data, with no backend,
   networking or persistence yet. The code is structured so real data can be
   swapped in later.
-- **Open:** the wife's real name. The mockups use "Sara" as a placeholder;
-  the user said the real name is different but has not yet given it.
 
 ## Brand Commitments
 

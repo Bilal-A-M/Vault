@@ -7,7 +7,7 @@ enum MockData {
     // MARK: People
 
     static let me = Person(name: "Bilal", color: .teal, avatar: "🦊")
-    static let wife = Person(name: "Sara", color: .coral, avatar: "🌸")
+    static let wife = Person(name: "Hiba", color: .coral, avatar: "🌸")
     static let people = [me, wife]
 
     // MARK: Goals (different progress levels; `house` sits just under 50%)

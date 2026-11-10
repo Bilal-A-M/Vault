@@ -5,7 +5,7 @@ import SwiftUI
 /// or run the app and use the toolbar button to flip the appearance.
 struct DesignGalleryView: View {
     @State private var scheme: ColorScheme?
-    @State private var name = "Sara"
+    @State private var name = "Hiba"
     @State private var emptyText = ""
     @State private var amountCents = 12_500
     @State private var ringProgress = 0.78
@@ -228,7 +228,7 @@ struct DesignGalleryView: View {
             HStack(spacing: VaultSpacing.lg) {
                 PersonAvatar(person: MockData.me, size: 56)
                 PersonAvatar(person: MockData.wife, size: 56)
-                PersonAvatar(person: Person(name: "Sara", color: .lavender), size: 40)
+                PersonAvatar(person: Person(name: "Hiba", color: .lavender), size: 40)
                 PersonAvatar(person: Person(name: "Bilal", color: .sky), size: 28)
             }
             HStack(spacing: VaultSpacing.sm) {
