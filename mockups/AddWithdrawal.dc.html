@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Log withdrawal</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#D9DDE3}a:hover{color:#FFFFFF}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; background: #000000; color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', Inter, system-ui, sans-serif; padding-top: 50px; overflow: hidden; display: flex; flex-direction: column">
+
+<div style="position: relative; flex: 1; border-radius: 14px 14px 0 0; background: #0E0E11; overflow: hidden; padding: 8px 20px 30px; display: flex; flex-direction: column; gap: 18px">
+<div aria-hidden="true" style="position: absolute; width: 480px; height: 320px; left: -45px; top: -170px; border-radius: 50%; background: radial-gradient(closest-side, rgba(217,221,227,.08), rgba(217,221,227,0))"></div>
+
+<span aria-hidden="true" style="position: relative; align-self: center; width: 36px; height: 5px; border-radius: 3px; background: rgba(255,255,255,.22)"></span>
+
+<div style="position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center">
+<a href="Main.dc.html" style="justify-self: start; min-height: 44px; display: flex; align-items: center; font-size: 17px; text-decoration: none">Cancel</a>
+<span style="font-size: 17px; font-weight: 600">Log withdrawal</span>
+<span></span>
+</div>
+
+<div role="radiogroup" aria-label="Type" style="position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 2px; border-radius: 9px; background: rgba(118,118,128,.24)">
+<button role="radio" aria-checked="false" style="min-height: 32px; border: 0; border-radius: 7px; background: none; color: #F3F4F6; font-family: inherit; font-size: 13px; font-weight: 500">Deposit</button>
+<button role="radio" aria-checked="true" style="min-height: 32px; border: 0; border-radius: 7px; background: #636366; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 600">Withdrawal</button>
+</div>
+
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 10px 0 2px">
+<label for="amount" style="font-size: 15px; color: #A3A7AE">Amount</label>
+<input id="amount" inputmode="decimal" value="$150" style="width: 100%; border: 0; background: none; padding: 0; outline: none; text-align: center; font-family: Sora, Inter, sans-serif; font-size: 64px; font-weight: 500; letter-spacing: -2.4px; color: #F3F4F6; font-variant-numeric: tabular-nums">
+<div style="display: flex; gap: 8px">
+<button style="min-height: 36px; padding: 0 14px; border-radius: 18px; border: 0; background: #1C1C21; color: #D9DDE3; font-family: inherit; font-size: 15px; font-weight: 500">+$50</button>
+<button style="min-height: 36px; padding: 0 14px; border-radius: 18px; border: 0; background: #1C1C21; color: #D9DDE3; font-family: inherit; font-size: 15px; font-weight: 500">+$100</button>
+<button style="min-height: 36px; padding: 0 14px; border-radius: 18px; border: 0; background: #1C1C21; color: #D9DDE3; font-family: inherit; font-size: 15px; font-weight: 500">+$500</button>
+</div>
+</div>
+
+<div style="position: relative; border-radius: 12px; background: #1C1C21; display: flex; flex-direction: column">
+<button style="min-height: 48px; padding: 0 16px; border: 0; border-bottom: 0.5px solid rgba(255,255,255,.12); background: none; color: #F3F4F6; font-family: inherit; display: flex; align-items: center; gap: 12px; text-align: left">
+<span style="flex: 1; font-size: 17px">Goal</span>
+<span style="font-size: 17px; color: #A3A7AE">Emergency fund</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B8F97" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+</button>
+<div style="min-height: 52px; padding: 0 12px 0 16px; border-bottom: 0.5px solid rgba(255,255,255,.12); display: flex; align-items: center; gap: 12px">
+<span style="flex: 1; font-size: 17px">Added by</span>
+<div role="radiogroup" aria-label="Added by" style="display: flex; gap: 6px">
+<button role="radio" aria-checked="true" style="min-height: 36px; padding: 0 12px 0 4px; border-radius: 18px; border: 1.5px solid #8FD3E0; background: rgba(143,211,224,.12); color: #F3F4F6; font-family: inherit; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 6px"><span style="width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #8FD3E0, #5B8FD9); color: #07131C; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">B</span>Me</button>
+<button role="radio" aria-checked="false" style="min-height: 36px; padding: 0 12px 0 4px; border-radius: 18px; border: 1px solid rgba(255,255,255,.10); background: none; color: #A3A7AE; font-family: inherit; font-size: 15px; display: flex; align-items: center; gap: 6px"><span style="width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #E9B3B9, #C9789A); color: #22090F; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">H</span>Hiba</button>
+</div>
+</div>
+<div style="min-height: 48px; padding: 0 16px; border-bottom: 0.5px solid rgba(255,255,255,.12); display: flex; align-items: center; gap: 12px">
+<label for="date" style="flex: 1; font-size: 17px">Date</label>
+<input id="date" value="Today" style="width: 96px; padding: 6px 10px; border: 0; border-radius: 8px; background: rgba(118,118,128,.24); color: #F3F4F6; font-family: inherit; font-size: 17px; text-align: center; outline: none">
+</div>
+<div style="min-height: 48px; padding: 0 16px; display: flex; align-items: center; gap: 12px">
+<label for="note" style="flex: none; font-size: 17px">Note</label>
+<input id="note" value="Car repair" style="flex: 1; min-width: 0; border: 0; background: none; color: #A3A7AE; font-family: inherit; font-size: 17px; text-align: right; outline: none">
+</div>
+</div>
+
+<div style="position: relative; margin-top: auto; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: center; font-size: 13px; color: #A3A7AE">Emergency fund goes from 100% to <span style="color: #D9DDE3; font-weight: 600">98.5%</span></span>
+<button style="height: 54px; border: 0; border-radius: 15px; background: linear-gradient(180deg, #F5F6F8, #C6CBD3); color: #0E0F12; font-family: inherit; font-size: 17px; font-weight: 600; box-shadow: inset 0 1px 0 rgba(255,255,255,.35)">Log $150 withdrawal from Emergency fund</button>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

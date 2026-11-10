@@ -225,7 +225,7 @@ Depth comes from tonal layering (black ground, graphite cards, raised graphite c
 - **Primary button** (`inset 0 1px 0 rgba(255,255,255,.6), 0 8px 18px -10px rgba(0,0,0,.9)`): a lit top bevel on the platinum gradient.
 
 ### The Black Card material (build notes)
-The hero card is split in two. The top panel is visibly brushed gunmetal: a diagonal sheen (white at 10% around 40%), horizontal brushed grain (alternating 1pt lines of 5% white and 6% black every 4pt), and a base gradient from `#3A3D44` to `#1D1F23`, with a 1pt top highlight at 24% white. It holds "Saved together", a sync pill, the total in white and a hide-balance eye button. The bottom strip is flat `#141519` with four actions (Add deposit in brushed platinum, then Withdraw, New goal, History). The same dark card is used in light mode, where it reads as a black card on paper. In SwiftUI, build the grain as a tiled image or a `Canvas` of thin lines so it survives on device.
+The hero card is split in two. The top panel is visibly brushed gunmetal: a diagonal sheen (white at 10% around 40%), horizontal brushed grain (alternating 1pt lines of 5% white and 6% black every 4pt), and a base gradient from `#3A3D44` to `#1D1F23`, with a 1pt top highlight at 24% white. It holds "Saved together", a sync pill, the total in white and a hide-balance eye button. The bottom strip is flat `#141519` with two equal buttons: "Add deposit" in brushed platinum and "Log withdrawal" in quiet graphite (only "Add deposit" on the empty state). The sync pill always states its time ("Synced · just now", "Synced 2h ago"). The same dark card is used in light mode, where it reads as a black card on paper. In SwiftUI, build the grain as a tiled image or a `Canvas` of thin lines so it survives on device.
 
 ### Named Rules
 **The One Object Rule.** Only the hero card gets material and a drop shadow. Every other surface is flat graphite.
@@ -240,7 +240,7 @@ Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the he
 
 ### Buttons
 - **Shape:** gently rounded (15pt), 54pt tall, full width.
-- **Primary:** brushed platinum gradient with ink text and a plus icon where it adds; one per screen. On the Dashboard the primary action is the platinum Add circle in the hero card's action strip.
+- **Primary:** brushed platinum gradient with ink text and a plus icon where it adds; one per screen. On the Dashboard it is the "Add deposit" button in the hero card's strip, beside a graphite "Log withdrawal" that opens the same sheet preset to Withdrawal.
 - **Add (icon):** a 36pt filled platinum circle with an ink plus. Appears in the navigation bar only after the hero card has scrolled away, so the screen never shows two add buttons at once.
 - **Text buttons and links:** platinum, 600 weight, with a chevron when they navigate ("See all 4 ›").
 
@@ -266,6 +266,9 @@ Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the he
 ### Activity row (signature)
 A 40pt person avatar, a 17pt title, a 13pt subtitle (who · when · goal), and the amount in Sora on the right. Deposits show "+$200"; withdrawals show "−$125.50" in the same colour, with "Withdrawal from …" in the subtitle. A deposit from the other person since you last opened the app carries an outlined "New" tag, and its subtitle states the effect ("Vacation passed 75%").
 
+### Hide balance
+The eye button on the hero card hides every dollar amount on the screen (total, monthly split, goal cards, activity), replacing each with "••••" in Sora; percentages stay. Its label toggles between "Hide balance" and "Show balance", and the icon gains a slash while hidden.
+
 ### Milestone badge (signature)
 A platinum pill with a star and the percentage ("★ 75%"), shown on a goal card until the new milestone has been seen. Earned milestones on goal screens are tinted platinum pills; unearned ones are outlined.
 
@@ -284,6 +287,7 @@ A platinum pill with a star and the percentage ("★ 75%"), shown on a goal card
 - **Don't** bring back the vault-dial pattern inside the hero card; the dial lives only in the logo, widgets and notification icon.
 - **Don't** give goals their own colours; goals are told apart by icon.
 - **Don't** show two add buttons at the same time, or put a custom floating tab bar in place of the system one.
+- **Don't** word actions as if Vault moves money ("Withdraw", "Send", "Pay"); it records what you did ("Add deposit", "Log withdrawal").
 
 ## Code map
 
