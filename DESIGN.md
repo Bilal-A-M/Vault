@@ -214,7 +214,7 @@ A cool, metallic neutral palette with one platinum accent and two soft person co
 
 ## Layout
 
-A single-column iPhone layout at 390pt wide with a 20pt page margin. Sections are separated by 24pt; cards pad 18pt (the hero 22pt); list rows are at least 44pt tall with 12pt vertical padding. Top-level tabs open with a 34pt large title that collapses to an inline title on scroll. The Goals row on the Dashboard is a horizontal scroller with 156pt cards that bleed off the right edge to signal more. A standard tab bar sits at the bottom with a translucent system material behind it.
+A single-column, fluid iPhone layout with a 20pt page margin. The two target phones are the iPhone 18 Pro Max (440 × 956pt) and the iPhone 17 Pro (402 × 874pt); every screen stretches between them, charts scale with the width, and the Goals row simply shows more of the next card on the wider phone. Safe areas: content starts below the Dynamic Island (about 62pt from the top) and the tab bar keeps 34pt for the home indicator. Sections are separated by 24pt; cards pad 18pt (the hero 22pt); list rows are at least 44pt tall with 12pt vertical padding. Top-level tabs open with a 34pt large title that collapses to an inline title on scroll. The Goals row on the Dashboard is a horizontal scroller with 156pt cards that bleed off the right edge to signal more. A standard tab bar sits at the bottom with a translucent system material behind it.
 
 ## Elevation & Depth
 
@@ -300,4 +300,4 @@ The mockups for every screen live in `mockups/` (open them on the design canvas)
 | `Vault/MockData` | The only source of mock data |
 | `Vault/Utilities` | `Money`, the single money-formatting helper (integer cents) |
 | `Vault/DesignSystem` | Tokens, components and the component gallery (pre-redesign) |
-| `mockups/` | The 18 screen mockups this file was derived from |
+| `mockups/` | The 20 screen mockups this file was derived from, sized for the iPhone 18 Pro Max and 17 Pro |
