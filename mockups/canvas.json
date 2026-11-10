@@ -1,1 +1,223 @@
-{"v":3,"createdOnFiles":{"v":1,"at":"2026-11-10T12:00:00Z"},"title":"Vault app mockups","launch":{"view":"canvas"},"pages":[],"boards":{"Main.dc.html":{"x":0,"y":0,"w":440,"h":1240,"title":"Dashboard","is_interactive":true},"AddDeposit.dc.html":{"x":520,"y":0,"w":440,"h":956,"title":"Add deposit"},"Goals.dc.html":{"x":1040,"y":0,"w":440,"h":956,"title":"Goals","is_interactive":true},"GoalDetail.dc.html":{"x":1560,"y":0,"w":440,"h":1240,"title":"Goal detail"},"History.dc.html":{"x":2080,"y":0,"w":440,"h":956,"title":"History","is_interactive":true},"Insights.dc.html":{"x":2600,"y":0,"w":440,"h":1240,"title":"Insights","is_interactive":true},"Welcome.dc.html":{"x":0,"y":1640,"w":440,"h":956,"title":"Setup 1: Welcome"},"SetupPeople.dc.html":{"x":520,"y":1640,"w":440,"h":956,"title":"Setup 2: The two of you"},"SetupWho.dc.html":{"x":1040,"y":1640,"w":440,"h":956,"title":"Setup 3: Whose phone"},"Celebration.dc.html":{"x":1560,"y":1640,"w":440,"h":956,"title":"Milestone celebration"},"Settings.dc.html":{"x":2080,"y":1640,"w":440,"h":1100,"title":"Settings","is_interactive":true},"Widgets.dc.html":{"x":2600,"y":1640,"w":440,"h":980,"title":"Widgets and notifications"},"DashboardLight.dc.html":{"x":3120,"y":1640,"w":440,"h":956,"title":"Dashboard, light mode"},"DashboardEmpty.dc.html":{"x":0,"y":3220,"w":440,"h":956,"title":"Dashboard: empty"},"DashboardOffline.dc.html":{"x":520,"y":3220,"w":440,"h":956,"title":"Dashboard: can't sync"},"DashboardLoading.dc.html":{"x":1040,"y":3220,"w":440,"h":956,"title":"Dashboard: loading"},"DashboardScrolled.dc.html":{"x":1560,"y":3220,"w":440,"h":956,"title":"Dashboard: scrolled"},"DashboardHiba.dc.html":{"x":2080,"y":3220,"w":402,"h":1240,"title":"Dashboard: Hiba's phone","is_interactive":true},"DashboardHidden.dc.html":{"x":2600,"y":3220,"w":440,"h":1240,"title":"Dashboard: balance hidden"},"AddWithdrawal.dc.html":{"x":3120,"y":3220,"w":440,"h":956,"title":"Log withdrawal"}},"order":["Main.dc.html","AddDeposit.dc.html","Goals.dc.html","GoalDetail.dc.html","History.dc.html","Insights.dc.html","Welcome.dc.html","SetupPeople.dc.html","SetupWho.dc.html","Celebration.dc.html","Settings.dc.html","Widgets.dc.html","DashboardLight.dc.html","DashboardEmpty.dc.html","DashboardOffline.dc.html","DashboardLoading.dc.html","DashboardScrolled.dc.html","DashboardHiba.dc.html","DashboardHidden.dc.html","AddWithdrawal.dc.html"],"notes":{"t1":{"x":0,"y":-300,"text":"Core screens","kind":"title1","maxW":3040},"t2":{"x":0,"y":1340,"text":"Setup, moments and system surfaces","kind":"title1","maxW":3560},"t3":{"x":0,"y":2960,"text":"States and variants","kind":"title1","maxW":3560},"dev":{"x":3200,"y":-300,"w":340,"text":"Sized for iPhone 18 Pro Max (440 \u00d7 956 pt). Hiba's phone is an iPhone 17 Pro (402 \u00d7 874 pt): see \"Dashboard: Hiba's phone\". Layouts are fluid, so the same screens fit both.","fill":"gray"}},"designSystems":[]}
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "AddDeposit.dc.html": {
+      "h": 956,
+      "title": "Add deposit",
+      "w": 440,
+      "x": 520,
+      "y": 0
+    },
+    "AddWithdrawal.dc.html": {
+      "h": 956,
+      "title": "Log withdrawal",
+      "w": 440,
+      "x": 3120,
+      "y": 3220
+    },
+    "Celebration.dc.html": {
+      "h": 956,
+      "title": "Milestone celebration",
+      "w": 440,
+      "x": 1560,
+      "y": 1640
+    },
+    "DashboardEmpty.dc.html": {
+      "h": 956,
+      "title": "Dashboard: empty",
+      "w": 440,
+      "x": 0,
+      "y": 3220
+    },
+    "DashboardHiba.dc.html": {
+      "h": 1240,
+      "is_interactive": true,
+      "title": "Dashboard: Hiba's phone",
+      "w": 402,
+      "x": 2080,
+      "y": 3220
+    },
+    "DashboardHidden.dc.html": {
+      "h": 1240,
+      "title": "Dashboard: balance hidden",
+      "w": 440,
+      "x": 2600,
+      "y": 3220
+    },
+    "DashboardLight.dc.html": {
+      "h": 956,
+      "title": "Dashboard, light mode",
+      "w": 440,
+      "x": 3120,
+      "y": 1640
+    },
+    "DashboardLoading.dc.html": {
+      "h": 956,
+      "title": "Dashboard: loading",
+      "w": 440,
+      "x": 1040,
+      "y": 3220
+    },
+    "DashboardOffline.dc.html": {
+      "h": 956,
+      "title": "Dashboard: can't sync",
+      "w": 440,
+      "x": 520,
+      "y": 3220
+    },
+    "DashboardScrolled.dc.html": {
+      "h": 956,
+      "title": "Dashboard: scrolled",
+      "w": 440,
+      "x": 1560,
+      "y": 3220
+    },
+    "GoalDetail.dc.html": {
+      "h": 1240,
+      "title": "Goal detail",
+      "w": 440,
+      "x": 1560,
+      "y": 0
+    },
+    "Goals.dc.html": {
+      "h": 956,
+      "is_interactive": true,
+      "title": "Goals",
+      "w": 440,
+      "x": 1040,
+      "y": 0
+    },
+    "History.dc.html": {
+      "h": 956,
+      "is_interactive": true,
+      "title": "History",
+      "w": 440,
+      "x": 2080,
+      "y": 0
+    },
+    "Insights.dc.html": {
+      "h": 1240,
+      "is_interactive": true,
+      "title": "Insights",
+      "w": 440,
+      "x": 2600,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 1240,
+      "is_interactive": true,
+      "title": "Dashboard",
+      "w": 440,
+      "x": 0,
+      "y": 0
+    },
+    "Settings.dc.html": {
+      "h": 1100,
+      "is_interactive": true,
+      "title": "Settings",
+      "w": 440,
+      "x": 2080,
+      "y": 1640
+    },
+    "SetupPeople.dc.html": {
+      "h": 956,
+      "title": "Setup 2: The two of you",
+      "w": 440,
+      "x": 520,
+      "y": 1640
+    },
+    "SetupWho.dc.html": {
+      "h": 956,
+      "title": "Setup 3: Whose phone",
+      "w": 440,
+      "x": 1040,
+      "y": 1640
+    },
+    "Welcome.dc.html": {
+      "h": 956,
+      "title": "Setup 1: Welcome",
+      "w": 440,
+      "x": 0,
+      "y": 1640
+    },
+    "Widgets.dc.html": {
+      "h": 980,
+      "title": "Widgets and notifications",
+      "w": 440,
+      "x": 2600,
+      "y": 1640
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-10T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "noteOrder": [
+    "t1",
+    "t2",
+    "t3",
+    "dev"
+  ],
+  "notes": {
+    "dev": {
+      "fill": "gray",
+      "text": "Sized for iPhone 18 Pro Max (440 × 956 pt). Hiba's phone is an iPhone 17 Pro (402 × 874 pt): see \"Dashboard: Hiba's phone\". Layouts are fluid, so the same screens fit both.",
+      "w": 340,
+      "x": 3200,
+      "y": -300
+    },
+    "t1": {
+      "kind": "title1",
+      "maxW": 3040,
+      "text": "Core screens",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "t2": {
+      "kind": "title1",
+      "maxW": 3560,
+      "text": "Setup, moments and system surfaces",
+      "w": 240,
+      "x": 0,
+      "y": 1340
+    },
+    "t3": {
+      "kind": "title1",
+      "maxW": 3560,
+      "text": "States and variants",
+      "w": 240,
+      "x": 0,
+      "y": 2960
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "AddDeposit.dc.html",
+    "Goals.dc.html",
+    "GoalDetail.dc.html",
+    "History.dc.html",
+    "Insights.dc.html",
+    "Welcome.dc.html",
+    "SetupPeople.dc.html",
+    "SetupWho.dc.html",
+    "Celebration.dc.html",
+    "Settings.dc.html",
+    "Widgets.dc.html",
+    "DashboardLight.dc.html",
+    "DashboardEmpty.dc.html",
+    "DashboardOffline.dc.html",
+    "DashboardLoading.dc.html",
+    "DashboardScrolled.dc.html",
+    "DashboardHiba.dc.html",
+    "DashboardHidden.dc.html",
+    "AddWithdrawal.dc.html"
+  ],
+  "pages": [],
+  "title": "Vault app mockups"
+}

@@ -3,6 +3,7 @@ name: Vault
 description: A shared savings tracker for two, finished like a black metal card.
 colors:
   platinum: "#D9DDE3"
+  progress-lime: "#C8F06A"
   platinum-bright: "#F5F6F8"
   platinum-deep: "#C6CBD3"
   on-platinum: "#0E0F12"
@@ -167,7 +168,10 @@ and the vault-dial pattern inside the hero card.
 A cool, metallic neutral palette with one platinum accent and two soft person colours.
 
 ### Primary
-- **Platinum** (`platinum`): the accent. Primary buttons, the filled add button, progress arcs on every ring and bar, chart lines, milestone badges and links. Primary buttons use a brushed gradient from **Bright Platinum** (`platinum-bright`) to **Deep Platinum** (`platinum-deep`). Text on platinum is **Ink** (`on-platinum`).
+- **Platinum** (`platinum`): the action accent. Primary buttons, the filled add button and links. Primary buttons use a brushed gradient from **Bright Platinum** (`platinum-bright`) to **Deep Platinum** (`platinum-deep`). Text on platinum is **Ink** (`on-platinum`).
+
+### Progress
+- **Electric Lime** (`progress-lime`): the one colour that means "you are getting closer". Every progress arc and bar, the savings and balance chart lines, milestone badges ("★ 75%"), "Goal reached" pills, the "Vacation passed 75%" line, the new percentage in the Add deposit preview, and the celebration screen. Text on lime is **Ink** (`on-platinum`). Never on buttons, links, cards or text blocks, and never for a decrease (a withdrawal's new percentage stays neutral).
 
 ### Secondary
 - **Bilal Sky** (`bilal-sky`, gradient to `bilal-sky-deep`): Bilal's avatar ring, his share of every split bar and stacked chart, his legend dot.
@@ -183,9 +187,11 @@ A cool, metallic neutral palette with one platinum accent and two soft person co
 - **System colours:** iOS green (`system-green`) for switches that are on, iOS red (`system-red`) for Delete only.
 
 ### Named Rules
-**The Two Voices Rule.** Only Bilal and Hiba get colour. Goals, states and charts that are not about a person are platinum or neutral.
+**The Three Colours Rule.** Sky is Bilal, rose is Hiba, lime is progress. Nothing else gets colour: goals are told apart by icon, and actions are platinum.
 
-**The Platinum Is a Promise Rule.** Platinum means "you can act on this" or "this is progress". It never decorates.
+**The Platinum Is a Promise Rule.** Platinum means "you can act on this". It never decorates.
+
+**The Lime Is Earned Rule.** Lime appears only where something grew. If a screen has no progress on it, it has no lime.
 
 **The No Gold, No Glow Rule.** No warm metallic accent, no coloured halos, no ambient colour blobs. A single faint neutral haze at the top of a screen is the maximum.
 
@@ -234,7 +240,7 @@ The hero card is split in two. The top panel is visibly brushed gunmetal: a diag
 
 ## Shapes
 
-Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the hero card, 22pt for cards, 15pt for primary buttons, 12pt for grouped lists, 9pt for segmented controls, and full pills for chips, badges and the add button. Progress is always a ring with round caps, drawn clockwise from 12 o'clock, on a 7% white track. Avatars are circles with a 1.5pt gradient ring in the person's colour.
+Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the hero card, 22pt for cards, 15pt for primary buttons, 12pt for grouped lists, 9pt for segmented controls, and full pills for chips, badges and the add button. Progress is always a lime ring with round caps, drawn clockwise from 12 o'clock, on a 7% white track. Avatars are circles with a 1.5pt gradient ring in the person's colour.
 
 ## Components
 
@@ -286,6 +292,7 @@ A platinum pill with a star and the percentage ("★ 75%"), shown on a goal card
 - **Don't** add ambient colour glows, glow filters, glass/frosted cards or gradient text.
 - **Don't** bring back the vault-dial pattern inside the hero card; the dial lives only in the logo, widgets and notification icon.
 - **Don't** give goals their own colours; goals are told apart by icon.
+- **Don't** use lime on buttons, links or anything that is not progress, or in light mode on white (it fails contrast there).
 - **Don't** show two add buttons at the same time, or put a custom floating tab bar in place of the system one.
 - **Don't** word actions as if Vault moves money ("Withdraw", "Send", "Pay"); it records what you did ("Add deposit", "Log withdrawal").
 

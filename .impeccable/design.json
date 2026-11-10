@@ -83,6 +83,21 @@
           "#B6BBC4",
           "#E3E6EA"
         ]
+      },
+      "progress-lime": {
+        "role": "tertiary",
+        "displayName": "Electric Lime",
+        "canonical": "#C8F06A",
+        "tonalRamp": [
+          "#26300C",
+          "#3B4A13",
+          "#55691C",
+          "#728C27",
+          "#93B437",
+          "#B2D84F",
+          "#C8F06A",
+          "#EEFBD1"
+        ]
       }
     },
     "typographyMeta": {
@@ -212,13 +227,13 @@
     ],
     "rules": [
       {
-        "name": "The Two Voices Rule",
-        "body": "Only Bilal and Hiba get colour. Goals, states and charts that are not about a person are platinum or neutral.",
+        "name": "The Three Colours Rule",
+        "body": "Sky is Bilal, rose is Hiba, lime is progress. Nothing else gets colour: goals are told apart by icon, and actions are platinum.",
         "section": "colors"
       },
       {
         "name": "The Platinum Is a Promise Rule",
-        "body": "Platinum means \"you can act on this\" or \"this is progress\". It never decorates.",
+        "body": "Platinum means \"you can act on this\". It never decorates.",
         "section": "colors"
       },
       {
@@ -240,6 +255,11 @@
         "name": "The One Object Rule",
         "body": "Only the hero card gets material and a drop shadow. Every other surface is flat graphite.",
         "section": "elevation"
+      },
+      {
+        "name": "The Lime Is Earned Rule",
+        "body": "Lime appears only where something grew. If a screen has no progress on it, it has no lime.",
+        "section": "colors"
       }
     ],
     "dos": [
@@ -255,7 +275,8 @@
       "Don't bring back the vault-dial pattern inside the hero card; the dial lives only in the logo, widgets and notification icon.",
       "Don't give goals their own colours; goals are told apart by icon.",
       "Don't show two add buttons at the same time, or put a custom floating tab bar in place of the system one.",
-      "Don't word actions as if Vault moves money (\"Withdraw\", \"Send\", \"Pay\"); it records what you did (\"Add deposit\", \"Log withdrawal\")."
+      "Don't word actions as if Vault moves money (\"Withdraw\", \"Send\", \"Pay\"); it records what you did (\"Add deposit\", \"Log withdrawal\").",
+      "Don't use lime on buttons, links or anything that is not progress, or in light mode on white (it fails contrast there)."
     ]
   }
 }
