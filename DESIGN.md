@@ -225,10 +225,12 @@ Depth comes from tonal layering (black ground, graphite cards, raised graphite c
 - **Primary button** (`inset 0 1px 0 rgba(255,255,255,.6), 0 8px 18px -10px rgba(0,0,0,.9)`): a lit top bevel on the platinum gradient.
 
 ### The Black Card material (build notes)
-The hero card is three layers, top to bottom: a diagonal sheen (`linear-gradient(118deg, transparent 28%, white 5.5% at 44%, transparent 58%)`), a faint horizontal brushed grain (1pt lines at about 1.4% white every 3pt), and a base gradient from `#1D1E23` to `#0F1013`. The grain is too faint to survive on a real display: in SwiftUI, rely on the sheen gradient and the 1pt top highlight, and add a subtle noise image only if testing on device shows the card reading as flat. In light mode the same card is brushed silver (`#FBFBFC` to `#E6E8EC` with a white sheen).
+The hero card is split in two. The top panel is visibly brushed gunmetal: a diagonal sheen (white at 10% around 40%), horizontal brushed grain (alternating 1pt lines of 5% white and 6% black every 4pt), and a base gradient from `#3A3D44` to `#1D1F23`, with a 1pt top highlight at 24% white. It holds "Saved together", a sync pill, the total in white and a hide-balance eye button. The bottom strip is flat `#141519` with four actions (Add deposit in brushed platinum, then Withdraw, New goal, History). The same dark card is used in light mode, where it reads as a black card on paper. In SwiftUI, build the grain as a tiled image or a `Canvas` of thin lines so it survives on device.
 
 ### Named Rules
 **The One Object Rule.** Only the hero card gets material and a drop shadow. Every other surface is flat graphite.
+
+**The Readable Metal Rule.** Text on the metal panel is white or near-white (`#D5D8DE` minimum); never put light text on a light metal.
 
 ## Shapes
 
@@ -238,7 +240,7 @@ Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the he
 
 ### Buttons
 - **Shape:** gently rounded (15pt), 54pt tall, full width.
-- **Primary:** brushed platinum gradient with ink text and a plus icon where it adds; one per screen.
+- **Primary:** brushed platinum gradient with ink text and a plus icon where it adds; one per screen. On the Dashboard the primary action is the platinum Add circle in the hero card's action strip.
 - **Add (icon):** a 36pt filled platinum circle with an ink plus. Appears in the navigation bar only after the hero card has scrolled away, so the screen never shows two add buttons at once.
 - **Text buttons and links:** platinum, 600 weight, with a chevron when they navigate ("See all 4 ›").
 
