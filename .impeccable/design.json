@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T08:00:00Z",
+  "title": "Design System: Vault",
+  "extensions": {
+    "colorMeta": {
+      "platinum": { "role": "primary", "displayName": "Platinum", "canonical": "#D9DDE3", "tonalRamp": ["#22252A", "#3A3E45", "#565B63", "#767B84", "#999EA6", "#BCC0C7", "#D9DDE3", "#F1F2F5"] },
+      "bilal-sky": { "role": "secondary", "displayName": "Bilal Sky", "canonical": "#8FD3E0", "tonalRamp": ["#0E2A31", "#16434D", "#21606D", "#2F808F", "#4FA3B2", "#72BECB", "#8FD3E0", "#D3EFF4"] },
+      "hiba-rose": { "role": "secondary", "displayName": "Hiba Rose", "canonical": "#E9B3B9", "tonalRamp": ["#33161B", "#4F242B", "#6F363F", "#924C56", "#B66B75", "#D48F98", "#E9B3B9", "#F8E3E6"] },
+      "vault-black": { "role": "neutral", "displayName": "Vault Black", "canonical": "#09090B", "tonalRamp": ["#09090B", "#121215", "#1C1C21", "#2A2A31", "#3E3E47", "#5C5C66", "#8B8F97", "#F3F4F6"] },
+      "graphite-card": { "role": "neutral", "displayName": "Graphite Card", "canonical": "#121215" },
+      "light-graphite": { "role": "primary", "displayName": "Light-mode Graphite", "canonical": "#4A5260", "tonalRamp": ["#15181D", "#232830", "#333944", "#4A5260", "#6B7380", "#8E95A0", "#B6BBC4", "#E3E6EA"] }
+    },
+    "typographyMeta": {
+      "money-hero": { "displayName": "Money hero", "purpose": "The Dashboard total only." },
+      "money-row": { "displayName": "Money", "purpose": "Every other dollar amount." },
+      "large-title": { "displayName": "Large title", "purpose": "Top of each tab." },
+      "label": { "displayName": "Tab label", "purpose": "Tab bar labels only; the 11pt floor." }
+    },
+    "shadows": [
+      { "name": "hero-card", "value": "inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(0,0,0,.6), 0 30px 50px -24px rgba(0,0,0,1)", "purpose": "The black metal hero card: bright top edge, dark lower edge, long soft drop." },
+      { "name": "button-primary", "value": "inset 0 1px 0 rgba(255,255,255,.6), 0 8px 18px -10px rgba(0,0,0,.9)", "purpose": "Lit bevel on the platinum button." }
+    ],
+    "motion": [
+      { "name": "ring-fill", "value": "easeOut 0.9s", "purpose": "Progress rings and bars fill from zero on appear; instant under Reduce Motion." },
+      { "name": "state", "value": "snappy 0.3s", "purpose": "Selection and number changes." }
+    ],
+    "breakpoints": [
+      { "name": "iphone", "value": "390px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one main action on a screen, in brushed platinum.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg>Add deposit</button>",
+      "css": ".ds-btn-primary { display: flex; align-items: center; justify-content: center; gap: 8px; width: 320px; height: 54px; border: 0; border-radius: 15px; background: linear-gradient(180deg, #F5F6F8, #C6CBD3); color: #0E0F12; font: 600 17px -apple-system, 'SF Pro Text', Inter, sans-serif; box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 8px 18px -10px rgba(0,0,0,.9); transition: filter .15s, transform .15s; } .ds-btn-primary:hover { filter: brightness(1.04); } .ds-btn-primary:active { transform: scale(.98); } .ds-btn-primary:focus-visible { outline: 2px solid #F3F4F6; outline-offset: 3px; }"
+    },
+    {
+      "name": "Add Button",
+      "kind": "button",
+      "refersTo": "button-icon-add",
+      "description": "Filled platinum circle in the navigation bar, shown only after the hero scrolls away.",
+      "html": "<button class=\"ds-btn-add\" aria-label=\"Add deposit\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg></button>",
+      "css": ".ds-btn-add { width: 36px; height: 36px; border: 0; border-radius: 50%; background: #D9DDE3; color: #0E0F12; display: flex; align-items: center; justify-content: center; } .ds-btn-add:hover { background: #F1F2F5; } .ds-btn-add:focus-visible { outline: 2px solid #F3F4F6; outline-offset: 3px; }"
+    },
+    {
+      "name": "Hero Card",
+      "kind": "card",
+      "refersTo": "hero-card",
+      "description": "The Black Card: brushed graphite slab holding the total and sync status.",
+      "html": "<div class=\"ds-hero\"><span class=\"ds-hero-label\">Saved together</span><span class=\"ds-hero-total\">$35,280</span><span class=\"ds-hero-sync\">Synced with Hiba · just now</span></div>",
+      "css": ".ds-hero { width: 306px; padding: 22px; border-radius: 26px; display: flex; flex-direction: column; gap: 6px; color: #F3F4F6; font-family: -apple-system, 'SF Pro Text', Inter, sans-serif; background: linear-gradient(118deg, rgba(255,255,255,0) 28%, rgba(255,255,255,.055) 44%, rgba(255,255,255,0) 58%), repeating-linear-gradient(90deg, rgba(255,255,255,.014) 0 1px, rgba(255,255,255,0) 1px 3px), linear-gradient(160deg, #1D1E23 0%, #121317 55%, #0F1013 100%); border: 1px solid rgba(217,221,227,.12); box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(0,0,0,.6), 0 30px 50px -24px rgba(0,0,0,1); } .ds-hero-label { font-size: 15px; color: #A3A7AE; } .ds-hero-total { font: 500 50px/1.05 Sora, Inter, sans-serif; letter-spacing: -1.8px; font-variant-numeric: tabular-nums; } .ds-hero-sync { font-size: 13px; color: #A3A7AE; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Flat graphite container with a hairline edge.",
+      "html": "<div class=\"ds-card\"><strong>November</strong><span>+$1,450</span></div>",
+      "css": ".ds-card { width: 314px; padding: 18px; border-radius: 22px; background: #121215; border: 1px solid rgba(255,255,255,.07); color: #F3F4F6; font: 600 17px -apple-system, 'SF Pro Text', Inter, sans-serif; display: flex; justify-content: space-between; } .ds-card span { font: 500 17px Sora, Inter, sans-serif; }"
+    },
+    {
+      "name": "Person Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Filter or picker chip with the person's avatar.",
+      "html": "<button class=\"ds-chip\"><span class=\"ds-chip-av\">H</span>Hiba</button><button class=\"ds-chip ds-chip-on\">All</button>",
+      "css": ".ds-chip { height: 36px; padding: 0 12px 0 4px; margin-right: 8px; border: 0; border-radius: 18px; background: #1C1C21; color: #F3F4F6; font: 400 15px -apple-system, 'SF Pro Text', Inter, sans-serif; display: inline-flex; align-items: center; gap: 6px; } .ds-chip-av { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, #E9B3B9, #C9789A); color: #22090F; font: 700 12px Sora, Inter, sans-serif; display: flex; align-items: center; justify-content: center; } .ds-chip-on { padding: 0 14px; background: #F3F4F6; color: #09090B; font-weight: 600; } .ds-chip:focus-visible { outline: 2px solid #D9DDE3; outline-offset: 2px; }"
+    },
+    {
+      "name": "Tab Bar",
+      "kind": "nav",
+      "refersTo": "tab-bar-item",
+      "description": "Standard five-tab bar; selected tab white, filled and bold.",
+      "html": "<nav class=\"ds-tabs\"><a class=\"ds-tab ds-tab-on\">Home</a><a class=\"ds-tab\">History</a><a class=\"ds-tab\">Goals</a><a class=\"ds-tab\">Insights</a><a class=\"ds-tab\">Settings</a></nav>",
+      "css": ".ds-tabs { width: 390px; padding: 10px 4px 12px; display: grid; grid-template-columns: repeat(5, 1fr); background: rgba(18,18,21,.88); border-top: .5px solid rgba(255,255,255,.12); } .ds-tab { text-align: center; color: #8B8F97; font: 500 11px -apple-system, 'SF Pro Text', Inter, sans-serif; padding-top: 28px; } .ds-tab-on { color: #FFFFFF; font-weight: 700; } .ds-tab:hover { color: #A3A7AE; }"
+    },
+    {
+      "name": "Activity Row",
+      "kind": "custom",
+      "refersTo": "list-row",
+      "description": "Who, what, when and effect, with the amount in Sora; New tag for the partner's unseen deposits.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-row-av\"><span>H</span></span><span class=\"ds-row-text\"><span>Payday top-up <em>New</em></span><small>Hiba · Today · Vacation passed 75%</small></span><span class=\"ds-row-amt\">+$200</span></div>",
+      "css": ".ds-row { width: 314px; display: flex; align-items: center; gap: 12px; padding: 12px 0; color: #F3F4F6; font: 400 17px -apple-system, 'SF Pro Text', Inter, sans-serif; } .ds-row-av { width: 40px; height: 40px; border-radius: 50%; padding: 1.5px; box-sizing: border-box; background: linear-gradient(135deg, #E9B3B9, #C9789A); display: flex; } .ds-row-av span { flex: 1; border-radius: 50%; background: #121215; color: #F3D6DD; font: 600 16px Sora, Inter, sans-serif; display: flex; align-items: center; justify-content: center; } .ds-row-text { flex: 1; display: flex; flex-direction: column; gap: 2px; } .ds-row-text em { font-style: normal; font-size: 12px; font-weight: 600; padding: 1px 7px; border-radius: 6px; border: 1px solid rgba(217,221,227,.45); margin-left: 6px; } .ds-row-text small { font-size: 13px; color: #A3A7AE; } .ds-row-amt { font: 500 17px Sora, Inter, sans-serif; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Milestone Badge",
+      "kind": "custom",
+      "refersTo": "milestone-badge",
+      "description": "Fresh milestone marker on a goal card until seen.",
+      "html": "<span class=\"ds-badge\">★ 75%</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; gap: 3px; padding: 3px 8px; border-radius: 10px; background: #D9DDE3; color: #0E0F12; font: 700 12px -apple-system, 'SF Pro Text', Inter, sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Black Card",
+    "overview": "Vault is finished like a premium black metal card: brushed graphite, a fine platinum edge, and nothing on it that does not need to be there. It is a private ledger for two people, so the tone is calm, exact and quietly confident. The interface is dark first, built from standard iPhone parts (large titles, a labelled tab bar, grouped lists, segmented controls, switches, swipe actions), and lets the material and the numbers carry the character instead of decoration.\n\nColour is rationed. The app itself is black, white and platinum; the only saturated colours belong to the two people who use it, sky for Bilal and rose for Hiba, so who contributed what is readable at a glance. Moments of progress (a milestone passed, a goal reached) are marked quietly in place and celebrated in full only once.",
+    "keyCharacteristics": [
+      "Dark-first, near-black ground with graphite cards and hairline edges.",
+      "One neutral accent (platinum) for actions and progress; graphite in light mode.",
+      "Two person colours, used only for people and their data.",
+      "Money set in Sora with tabular figures; everything else in SF Pro.",
+      "Native iOS structure; brand lives in the material and the restraint."
+    ],
+    "rules": [
+      { "name": "The Two Voices Rule", "body": "Only Bilal and Hiba get colour. Goals, states and charts that are not about a person are platinum or neutral.", "section": "colors" },
+      { "name": "The Platinum Is a Promise Rule", "body": "Platinum means \"you can act on this\" or \"this is progress\". It never decorates.", "section": "colors" },
+      { "name": "The No Gold, No Glow Rule", "body": "No warm metallic accent, no coloured halos, no ambient colour blobs. A single faint neutral haze at the top of a screen is the maximum.", "section": "colors" },
+      { "name": "The Money Has Its Own Voice Rule", "body": "Every dollar figure uses Sora with tabular figures; nothing else does.", "section": "typography" },
+      { "name": "The 11pt Floor Rule", "body": "No text below 11pt, and 11pt is reserved for tab labels.", "section": "typography" },
+      { "name": "The One Object Rule", "body": "Only the hero card gets material and a drop shadow. Every other surface is flat graphite.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the accent platinum (#D9DDE3) in dark mode and graphite (#4A5260) in light mode.",
+      "Do use the standard iOS tab bar, grouped lists, segmented controls, switches and swipe actions.",
+      "Do set every amount in Sora with tabular figures, and drop \".00\" on whole-dollar totals.",
+      "Do show sync status (\"Synced with Hiba · just now\") wherever totals appear, and design the empty, can't-sync and loading states.",
+      "Do mark a crossed milestone quietly in place, and save the full celebration for the first time it happens."
+    ],
+    "donts": [
+      "Don't use gold or any warm metallic accent.",
+      "Don't add ambient colour glows, glow filters, glass/frosted cards or gradient text.",
+      "Don't bring back the vault-dial pattern inside the hero card; the dial lives only in the logo, widgets and notification icon.",
+      "Don't give goals their own colours; goals are told apart by icon.",
+      "Don't show two add buttons at the same time, or put a custom floating tab bar in place of the system one."
+    ]
+  }
+}
