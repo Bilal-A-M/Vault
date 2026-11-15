@@ -1,78 +1,85 @@
 import SwiftUI
 import UIKit
 
-// MARK: - Obsidian color tokens
+// MARK: - "The Black Card" colour tokens (see DESIGN.md)
 //
-// Direction: near-black surfaces, warm off-white text, one champagne-gold accent.
-// The two person colors are the only saturated hues in the app, so "who
-// contributed what" always reads at a glance.
-//
-// Colors are defined in code (not an asset catalog) so the same file can be
-// shared with the widget extension and every token has its light + dark value
-// side by side.
+// Three colours mean something: sky is Bilal, rose is Hiba, lime is progress.
+// Platinum is for actions. Everything else is black, graphite and grey.
+// Shared with the widget extension, so keep this file free of app-only types.
 
 enum VaultColor {
     // Surfaces
-    /// Page background.
-    static let background = Color(light: 0xF7F5F0, dark: 0x0B0B0D)
-    /// Cards and sheets.
-    static let surface = Color(light: 0xFFFFFF, dark: 0x16161A)
-    /// Controls sitting on a surface: inputs, chips, secondary buttons.
-    static let surfaceRaised = Color(light: 0xEFECE4, dark: 0x1F1F25)
-    /// Hairline card border. In dark mode this replaces shadows.
-    static let border = Color(light: Color.black.opacity(0.07), dark: Color.white.opacity(0.08))
-    /// Empty part of progress rings and bars.
-    static let track = Color(light: Color.black.opacity(0.08), dark: Color.white.opacity(0.10))
-
-    // Brand
-    /// "Ink": the strongest neutral, for high-emphasis fills that are not gold.
-    static let primary = Color(light: 0x121214, dark: 0xF5F3EE)
-    /// Text/icons placed on `primary`.
-    static let onPrimary = Color(light: 0xF7F5F0, dark: 0x0B0B0D)
-    /// Champagne gold. Darkened in light mode so white text on it passes 4.5:1.
-    static let accent = Color(light: 0x8A6D25, dark: 0xD4B36A)
-    /// Text/icons placed on `accent`.
-    static let onAccent = Color(light: 0xFFFFFF, dark: 0x0B0B0D)
-    /// Tinted gold wash for badges and highlights.
-    static let accentSoft = Color(light: Color(hex: 0x8A6D25, opacity: 0.12),
-                                  dark: Color(hex: 0xD4B36A, opacity: 0.16))
+    static let background = Color(light: 0xF4F5F7, dark: 0x09090B)
+    static let card = Color(light: 0xFFFFFF, dark: 0x121215)
+    static let raised = Color(light: 0xECEEF1, dark: 0x1C1C21)
+    static let hairline = Color(light: Color.black.opacity(0.07), dark: Color.white.opacity(0.07))
+    static let separator = Color(light: Color.black.opacity(0.10), dark: Color.white.opacity(0.10))
+    static let track = Color(light: Color.black.opacity(0.08), dark: Color.white.opacity(0.08))
 
     // Text
-    static let textPrimary = Color(light: 0x121214, dark: 0xF5F3EE)
-    static let textSecondary = Color(light: 0x5C5B57, dark: 0xA09E98)
-    /// Low emphasis only (placeholders, disabled, decorative). Not for body copy.
-    static let textTertiary = Color(light: 0x8E8C86, dark: 0x6B6A66)
+    static let textPrimary = Color(light: 0x141416, dark: 0xF3F4F6)
+    static let textSecondary = Color(light: 0x5A5F68, dark: 0xA3A7AE)
+    static let textTertiary = Color(light: 0x6B7079, dark: 0x8B8F97)
 
-    // Semantic
-    static let success = Color(light: 0x2E8F58, dark: 0x5FCB8B)
-    static let warning = Color(light: 0xB0741A, dark: 0xE8A94A)
-    /// Withdrawals and destructive actions.
-    static let danger = Color(light: 0xC4472F, dark: 0xF0705A)
+    // Action accent: platinum in dark mode, graphite in light mode.
+    static let accent = Color(light: 0x4A5260, dark: 0xD9DDE3)
+    static let onAccent = Color(light: 0xFFFFFF, dark: 0x0E0F12)
+    static let accentTop = Color(light: 0x2C3038, dark: 0xF5F6F8)
+    static let accentBottom = Color(light: 0x16181C, dark: 0xC6CBD3)
+
+    // Progress: electric lime in dark mode; deep olive in light mode, because
+    // lime fails contrast on white.
+    static let progress = Color(light: 0x5E8C0F, dark: 0xC8F06A)
+    static let onProgress = Color(light: 0xFFFFFF, dark: 0x0E0F12)
+
+    // The black metal hero card (same in both modes).
+    static let metalTop = Color(hex: 0x3A3D44)
+    static let metalMid = Color(hex: 0x282A30)
+    static let metalBottom = Color(hex: 0x1D1F23)
+    static let metalStrip = Color(hex: 0x141519)
+    static let metalLabel = Color(hex: 0xD5D8DE)
+
+    // System
+    static let destructive = Color(hex: 0xFF453A)
 }
 
-// MARK: - Person colors
-
 extension PersonColor {
-    /// The solid color for this person: avatars, chart series, split bars.
-    var color: Color {
+    /// Light end of the person's gradient (dark mode text, dots, bars).
+    var light: Color {
         switch self {
-        case .teal: Color(light: 0x1F9E8C, dark: 0x4FC3B0)
-        case .coral: Color(light: 0xD9603F, dark: 0xF0866B)
-        case .lavender: Color(light: 0x7765D6, dark: 0xA698F5)
-        case .sky: Color(light: 0x2F86D1, dark: 0x6DB6F2)
-        case .rose: Color(light: 0xC94A7C, dark: 0xEE86AE)
-        case .sage: Color(light: 0x5E8F4A, dark: 0x9CC98A)
+        case .sky: Color(hex: 0x8FD3E0)
+        case .rose: Color(hex: 0xE9B3B9)
+        case .lavender: Color(hex: 0xC9C1EC)
+        case .sage: Color(hex: 0xC3D8B2)
+        case .coral: Color(hex: 0xF2C0A8)
+        case .slate: Color(hex: 0xC4C9D2)
         }
     }
 
-    /// A quiet wash of the color, for avatar backgrounds and selected chips.
-    var softColor: Color { color.opacity(0.18) }
+    /// Deep end of the gradient.
+    var deep: Color {
+        switch self {
+        case .sky: Color(hex: 0x5B8FD9)
+        case .rose: Color(hex: 0xC9789A)
+        case .lavender: Color(hex: 0x8F82CF)
+        case .sage: Color(hex: 0x82A96E)
+        case .coral: Color(hex: 0xD98767)
+        case .slate: Color(hex: 0x7F8796)
+        }
+    }
+
+    /// The single colour used for charts and dots: light in dark mode, deep in light mode.
+    var solid: Color { Color(light: deep, dark: light) }
+
+    var gradient: LinearGradient {
+        LinearGradient(colors: [light, deep], startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
 }
 
 // MARK: - Helpers
 
 extension Color {
-    /// A color that resolves differently in light and dark mode.
+    /// A colour that resolves differently in light and dark mode.
     init(light: Color, dark: Color) {
         self.init(uiColor: UIColor { traits in
             traits.userInterfaceStyle == .dark ? UIColor(dark) : UIColor(light)

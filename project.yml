@@ -1,26 +1,67 @@
-# XcodeGen spec. Run `xcodegen generate` in this folder, then open Vault.xcodeproj.
+# XcodeGen spec. On a Mac: `brew install xcodegen`, then `xcodegen generate`
+# in this folder, then open Vault.xcodeproj.
 name: Vault
 options:
   bundleIdPrefix: com.vault
   deploymentTarget:
-    iOS: "17.0"
+    iOS: "26.0"
   createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    # Set this to your Apple ID's team in Xcode (Signing & Capabilities),
+    # or uncomment and fill in your team ID here.
+    # DEVELOPMENT_TEAM: ABCDE12345
 targets:
   Vault:
     type: application
     platform: iOS
     sources:
       - Vault
+    info:
+      path: Vault/Info.plist
+      properties:
+        CFBundleDisplayName: Vault
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        # Sora is the money typeface. Drop the .ttf files into
+        # Vault/Resources/Fonts (see README); without them the app falls back
+        # to SF Pro Rounded automatically.
+        UIAppFonts:
+          - Sora-Medium.ttf
+          - Sora-SemiBold.ttf
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.vault.app
         PRODUCT_NAME: Vault
-        MARKETING_VERSION: "0.1.0"
+        MARKETING_VERSION: "0.2.0"
         CURRENT_PROJECT_VERSION: "1"
-        SWIFT_VERSION: "5.0"
-        TARGETED_DEVICE_FAMILY: "1"
-        GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
-        INFOPLIST_KEY_CFBundleDisplayName: Vault
         ENABLE_PREVIEWS: YES
+    dependencies:
+      - target: VaultWidgets
+  VaultWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - VaultWidgets
+      - Vault/Models
+      - Vault/Domain/VaultMath.swift
+      - Vault/MockData
+      - Vault/Utilities/Money.swift
+      - Vault/DesignSystem/Tokens/VaultColor.swift
+    info:
+      path: VaultWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Vault
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.vault.app.widgets
+        PRODUCT_NAME: VaultWidgets
+        MARKETING_VERSION: "0.2.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SKIP_INSTALL: YES

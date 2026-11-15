@@ -299,13 +299,7 @@ A platinum pill with a star and the percentage ("★ 75%"), shown on a goal card
 
 ## Code map
 
-The mockups for every screen live in `mockups/` (open them on the design canvas). The SwiftUI project in `Vault/` was written earlier, before the redesign: its tokens in `Vault/DesignSystem/Tokens` still use the old gold accent and must be updated to this file when the coding phase starts.
-
-| Folder | Contents |
-|---|---|
-| `Vault/App` | App entry point |
-| `Vault/Models` | `Person`, `Goal`, `Milestone`, `Deposit`, `ContributionShare` |
-| `Vault/MockData` | The only source of mock data |
-| `Vault/Utilities` | `Money`, the single money-formatting helper (integer cents) |
-| `Vault/DesignSystem` | Tokens, components and the component gallery (pre-redesign) |
-| `mockups/` | The 20 screen mockups this file was derived from, sized for the iPhone 18 Pro Max and 17 Pro |
+The app is built (on mock data) from this file: tokens live in
+`Vault/DesignSystem/Tokens` (`VaultColor`, `VaultType`) and components in
+`Vault/DesignSystem/Components`. See README.md for the full folder map and how
+to run it. The screen mockups in `mockups/` remain the visual reference.

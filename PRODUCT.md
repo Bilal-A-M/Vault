@@ -49,16 +49,15 @@ $200 to Vacation".
 
 ## Capabilities and Constraints
 
-- Native iOS app in SwiftUI, iOS 17+, with WidgetKit widgets and Swift Charts.
+- Native iOS app in SwiftUI, iOS 26+ (for the Liquid Glass tab bar), with WidgetKit widgets and Swift Charts. Built and installed from a Mac with Xcode; a paid Apple Developer account is needed only for iCloud sharing and TestFlight.
 - Currency is **US dollars**. Amounts are stored as integer cents and
   formatted through one helper.
 - Core areas: first-launch setup (names, colour/avatar, whose phone),
   Dashboard, Add/edit deposit, History, Goals and goal detail, Insights,
   milestone celebrations, Settings, widgets, notifications.
 - No bank connection or automatic import is planned.
-- Current phase is design only: screens run on mock data, with no backend,
-  networking or persistence yet. The code is structured so real data can be
-  swapped in later.
+- Current phase: every screen is built and runs on mock data, with no
+  persistence or sync yet. Real data swaps in behind `VaultPersistence`.
 
 ## Brand Commitments
 
