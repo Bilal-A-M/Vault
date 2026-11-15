@@ -220,7 +220,7 @@ A cool, metallic neutral palette with one platinum accent and two soft person co
 
 ## Layout
 
-A single-column, fluid iPhone layout with a 20pt page margin. The two target phones are the iPhone 18 Pro Max (440 × 956pt) and the iPhone 17 Pro (402 × 874pt); every screen stretches between them, charts scale with the width, and the Goals row simply shows more of the next card on the wider phone. Safe areas: content starts below the Dynamic Island (about 62pt from the top) and the tab bar keeps 34pt for the home indicator. Sections are separated by 24pt; cards pad 18pt (the hero 22pt); list rows are at least 44pt tall with 12pt vertical padding. Top-level tabs open with a 34pt large title that collapses to an inline title on scroll. The Goals row on the Dashboard is a horizontal scroller with 156pt cards that bleed off the right edge to signal more. A standard tab bar sits at the bottom with a translucent system material behind it.
+A single-column, fluid iPhone layout with a 20pt page margin. The two target phones are the iPhone 18 Pro Max (440 × 956pt) and the iPhone 17 Pro (402 × 874pt); every screen stretches between them, charts scale with the width, and the Goals row simply shows more of the next card on the wider phone. Safe areas: content starts below the Dynamic Island (about 62pt from the top) and the tab bar keeps 34pt for the home indicator. Sections are separated by 24pt; cards pad 18pt (the hero 22pt); list rows are at least 44pt tall with 12pt vertical padding. Top-level tabs open with a 34pt large title that collapses to an inline title on scroll. Content keeps about 124pt clear at the bottom for the floating tab bar. The Goals row on the Dashboard is a horizontal scroller with 156pt cards that bleed off the right edge to signal more. A standard tab bar sits at the bottom with a translucent system material behind it.
 
 ## Elevation & Depth
 
@@ -247,7 +247,7 @@ Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the he
 ### Buttons
 - **Shape:** gently rounded (15pt), 54pt tall, full width.
 - **Primary:** brushed platinum gradient with ink text and a plus icon where it adds; one per screen. On the Dashboard it is the "Add deposit" button in the hero card's strip, beside a graphite "Log withdrawal" that opens the same sheet preset to Withdrawal.
-- **Add (icon):** a 36pt filled platinum circle with an ink plus. Appears in the navigation bar only after the hero card has scrolled away, so the screen never shows two add buttons at once.
+- **Add (floating):** the round glass ＋ beside the tab bar, always visible. On Home, the hero card's "Add deposit" is the in-context version of the same action.
 - **Text buttons and links:** platinum, 600 weight, with a chevron when they navigate ("See all 4 ›").
 
 ### Chips
@@ -266,8 +266,9 @@ Soft, continuous corners throughout, larger for bigger surfaces: 26pt for the he
 - **Segmented controls:** the standard iOS style (grey track, lifted grey thumb) for Deposit/Withdrawal, time ranges and appearance.
 
 ### Navigation
-- **Tab bar:** five labelled tabs (Home, History, Goals, Insights, Settings) on a translucent material with a top hairline. Unselected items are tertiary grey; the selected one is white, with a filled icon and a bold label.
-- **Navigation bar:** large title at rest; inline title plus the add button once scrolled. Back buttons are the standard chevron and the previous title.
+- **Tab bar:** Apple's floating Liquid Glass style. A glass pill (64pt tall, 16pt from the screen edges, 30pt above the bottom) holds four labelled tabs: Home, History, Goals, Insights. The selected tab sits in a lighter capsule with a filled icon and a bold white label; the others are light grey. Beside it, a round 64pt glass button with a ＋ opens Add deposit from anywhere. Light mode uses frosted white glass with dark icons.
+- **Settings:** not a tab. It opens from the avatar pair (top-left) and the settings button (top-right) on Home, and shows a "‹ Home" back link.
+- **Navigation bar:** large title at rest; inline title once scrolled (the floating ＋ covers adding). Back buttons are the standard chevron and the previous title.
 
 ### Activity row (signature)
 A 40pt person avatar, a 17pt title, a 13pt subtitle (who · when · goal), and the amount in Sora on the right. Deposits show "+$200"; withdrawals show "−$125.50" in the same colour, with "Withdrawal from …" in the subtitle. A deposit from the other person since you last opened the app carries an outlined "New" tag, and its subtitle states the effect ("Vacation passed 75%").
@@ -293,7 +294,7 @@ A platinum pill with a star and the percentage ("★ 75%"), shown on a goal card
 - **Don't** bring back the vault-dial pattern inside the hero card; the dial lives only in the logo, widgets and notification icon.
 - **Don't** give goals their own colours; goals are told apart by icon.
 - **Don't** use lime on buttons, links or anything that is not progress, or in light mode on white (it fails contrast there).
-- **Don't** show two add buttons at the same time, or put a custom floating tab bar in place of the system one.
+- **Don't** add more than four tabs to the floating bar, or put anything but Add deposit in the round button.
 - **Don't** word actions as if Vault moves money ("Withdraw", "Send", "Pay"); it records what you did ("Add deposit", "Log withdrawal").
 
 ## Code map

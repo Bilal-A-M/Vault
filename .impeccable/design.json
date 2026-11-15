@@ -194,9 +194,9 @@
       "name": "Tab Bar",
       "kind": "nav",
       "refersTo": "tab-bar-item",
-      "description": "Standard five-tab bar; selected tab white, filled and bold.",
-      "html": "<nav class=\"ds-tabs\"><a class=\"ds-tab ds-tab-on\">Home</a><a class=\"ds-tab\">History</a><a class=\"ds-tab\">Goals</a><a class=\"ds-tab\">Insights</a><a class=\"ds-tab\">Settings</a></nav>",
-      "css": ".ds-tabs { width: 390px; padding: 10px 4px 12px; display: grid; grid-template-columns: repeat(5, 1fr); background: rgba(18,18,21,.88); border-top: .5px solid rgba(255,255,255,.12); } .ds-tab { text-align: center; color: #8B8F97; font: 500 11px -apple-system, 'SF Pro Text', Inter, sans-serif; padding-top: 28px; } .ds-tab-on { color: #FFFFFF; font-weight: 700; } .ds-tab:hover { color: #A3A7AE; }"
+      "description": "Floating Liquid Glass pill with four tabs, plus a round glass \uff0b for Add deposit.",
+      "html": "<nav class=\"ds-tabs\"><div class=\"ds-pill\"><a class=\"ds-tab ds-tab-on\">Home</a><a class=\"ds-tab\">History</a><a class=\"ds-tab\">Goals</a><a class=\"ds-tab\">Insights</a></div><a class=\"ds-plus\" aria-label=\"Add deposit\">+</a></nav>",
+      "css": ".ds-tabs { width: 408px; padding: 16px; display: flex; gap: 10px; background: #09090B; } .ds-pill, .ds-plus { background: linear-gradient(180deg, rgba(255,255,255,.15), rgba(255,255,255,.06)); border: 1px solid rgba(255,255,255,.16); box-shadow: inset 0 1px 0 rgba(255,255,255,.28), 0 14px 32px -10px rgba(0,0,0,.85); } .ds-pill { flex: 1; height: 64px; box-sizing: border-box; padding: 4px; border-radius: 32px; display: grid; grid-template-columns: repeat(4, 1fr); } .ds-tab { border-radius: 28px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px; color: #C5C9D0; font: 500 11px -apple-system, Inter, sans-serif; } .ds-tab-on { background: rgba(255,255,255,.16); color: #FFFFFF; font-weight: 700; } .ds-plus { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font: 300 32px -apple-system, Inter, sans-serif; }"
     },
     {
       "name": "Activity Row",
@@ -274,7 +274,7 @@
       "Don't add ambient colour glows, glow filters, glass/frosted cards or gradient text.",
       "Don't bring back the vault-dial pattern inside the hero card; the dial lives only in the logo, widgets and notification icon.",
       "Don't give goals their own colours; goals are told apart by icon.",
-      "Don't show two add buttons at the same time, or put a custom floating tab bar in place of the system one.",
+      "Don't add more than four tabs to the floating bar, or put anything but Add deposit in the round button.",
       "Don't word actions as if Vault moves money (\"Withdraw\", \"Send\", \"Pay\"); it records what you did (\"Add deposit\", \"Log withdrawal\").",
       "Don't use lime on buttons, links or anything that is not progress, or in light mode on white (it fails contrast there)."
     ]
